@@ -5,6 +5,7 @@
 
 import org.rocksdb.NativeLibraryLoader;
 import org.rocksdb.util.Environment;
+
 import static java.lang.System.out;
 
 import java.io.File;
@@ -25,9 +26,9 @@ public class RocksDBTest {
         String OS = System.getProperty("os.name").toLowerCase();
         String ARCH = System.getProperty("os.arch").toLowerCase();
 
-        out.printf("shardLibraryName=%s\n",sharedLibraryName);
-        out.printf("jniLibraryName=%s\n",jniLibraryName);
-        out.printf("jniLibraryFileName=%s\n",jniLibraryFileName);
+        out.printf("shardLibraryName=%s\n", sharedLibraryName);
+        out.printf("jniLibraryName=%s\n", jniLibraryName);
+        out.printf("jniLibraryFileName=%s\n", jniLibraryFileName);
         out.printf("OS=%s\n", OS);
         out.printf("ARCH=%s\n", ARCH);
 

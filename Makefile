@@ -1,3 +1,5 @@
+build:
+	mvn clean package
+
 run:
-	mvn -q clean compile
-	mvn -q exec:java -Dexec.mainClass="RocksDBTest"
+	java -cp target/rockdb-test-1.0-SNAPSHOT-shaded.jar RocksDBTest
